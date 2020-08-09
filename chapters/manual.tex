@@ -47,7 +47,7 @@ Die Handlungsziele gemäss Modulidentifikation:
 \end{frame}
 
 
-\subsection{Interessante Links}\label{subsec:projekt}
+\subsection{Interessante Links}\label{subsec:links}
 \begin{frame}[fragile]
     Hier finden Sie eine Auflistung der relevanten Links die Sie benötigen für Ihren ersten Arbeitsauftrag.
 \end{frame}
@@ -60,6 +60,8 @@ Die Handlungsziele gemäss Modulidentifikation:
         \begin{tabularx}{0.8\textwidth} {
         | >{\raggedright\arraybackslash}X
         | >{\raggedright\arraybackslash}X | }
+            \hline
+            Ubuntu 20.04 & \href{https://ubuntu.com/}{Ubuntu} \\
             \hline
             IDE RubyMine & \href{https://www.jetbrains.com/de-de/ruby/}{RubyMine} \\
             \hline
@@ -87,13 +89,52 @@ Die Handlungsziele gemäss Modulidentifikation:
 
 
 
-\section{Selbstständigkeitserklärung}\label{sec:ssk}
+\section{Saubere Arbeitsumgebung}\label{sec:sauber}
 \begin{frame}[fragile]
-    \frametitle<presentation>{Selbstständigkeitserklärung}
-    Hiermit erkläre ich, dass dieses Dokument selbstständig verfasst wurde, dass alle Angaben
-    überprüft und entsprechend korrekt referenziert sind.
-    \mode<article>{\vSpaceStyle{}}
-    \gitAuthorDate~\gitAuthorName
+    Damit alle über die gleichen Voraussetzungen für dieses Modul verfügen, wird hier eine kleine Anleitung zum
+    Besten gegeben, wie das Sie eine neue Linux Ubuntu 20.04 VM installieren und dann dem entsprechend konfigurieren
+    mit der Software die Sie benötigen werden für das Projekt.
 \end{frame}
 
 
+\subsection{VM installieren}\label{subsec:vminstallieren}
+\begin{frame}[fragile]
+    Für die neue Installation von einem Ubuntu 20.04 benötigen Sie zu erste Mal das ISO, dieses können Sie
+    unter dem Ordner "Software4CsBe dann ISO" holen.
+    Während Sie auf den Download warten, beginnen Sie mit der Konfiguration der neuen VM.
+\end{frame}
+
+\begin{frame}[fragile]
+    \mode<article>{\vSpaceStyle{}}
+    \begin{enumerate}
+        \item Öffnen Sie VMWare Player und erstellen Sie eine neue VM.
+        \figureStyle{width=0.50\textwidth}{01_CreateVM}{Neue VM erstellen}{fig:createVM}
+        \item Sie wollen das ISO zu einem späteren Zeitpunkt übergeben, wählen Sie die entsprechende Option.
+        \figureStyle{width=0.60\textwidth}{02_iso_later}{Installiere das OS später}{fig:isolater}
+        \item Wählen Sie nun Betriebssystem aus das Sie später installieren wollen.
+        \figureStyle{width=0.60\textwidth}{03_guest_os}{Betriebssystem wählen}{fig:guestOS} \newpage
+        \item Geben Sie der VM einen Namen, z.B. "vmUbuntu20.04\textunderscore M133", für den Speicherort Ihrer VM wählen Sie die eigene
+        SSD aus (Somit Sie selbstverständlich auch von zu Hause aus arbeiten können).
+        \figureStyle{width=0.70\textwidth}{04_vm_name}{VM Name \& Speicherort}{fig:saveVM}
+        \item Geben Sie Ihrer VM eine Disk grösse von ca. 60 GB und speichern Sie diese als single file.
+        \figureStyle{width=0.70\textwidth}{05_disk_size}{Disk grösse \& Single File}{fig:diskSize}
+        \item Schliessen Sie nun die Konfiguration mit Finish ab.
+        \item Nun sollte das ISO in der Zwischenzeit heruntergeladen Sein.
+        Übergeben Sie dieses und speichern dann.
+        \item Starten Sie die VM und stellen Sie die Installation des Betriebssystems fertig.
+        \item Wählen Sie entweder Deutsch oder Englisch für die Sprache aus (Wenn Sie eine andere Sprache wählen kann ich ihnen keine Hilfe geben bei ihrer VM, falls sie probleme hat.)
+        Klicken Sie auf Install Ubuntu.
+        \item Suchen Sie das richtige Tastaturlayout aus. (Dazu können Sie auch auf Tastaturbelegung automatisch erkennen klicken) \newpage
+        \item Wählen Sie nun folgende Konfiguration aus.
+        \figureStyle{width=0.80\textwidth}{06_config}{Minimale Konfiguration}{fig:configVM}
+        \item Kicken Sie nun auf Installieren.
+        \item Benennen Sie den Benutzer wie den Computer wie Sie möchten (Stellen Sie sicher, das niemand Anderes den gleichen Computernamen hat).
+        \item Sie sind nun im Besitz einer VM, mit der man nun entsprechende Software für das Modul installieren kann.
+        \item Starten Sie die VM neu nach der Installation und führen Sie ein Softwareupdate durch.
+    \end{enumerate}
+\end{frame}
+
+\subsection{Alles was ein Softwareentwickler braucht}\label{subsec:software}
+\begin{frame}[fragile]
+    In diesem Kapitel wird sämtliche Software installiert die Sie in diesem Modul benötigen.
+\end{frame}
