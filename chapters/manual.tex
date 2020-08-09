@@ -128,13 +128,48 @@ Die Handlungsziele gemäss Modulidentifikation:
         \item Wählen Sie nun folgende Konfiguration aus.
         \figureStyle{width=0.80\textwidth}{06_config}{Minimale Konfiguration}{fig:configVM}
         \item Kicken Sie nun auf Installieren.
-        \item Benennen Sie den Benutzer wie den Computer wie Sie möchten (Stellen Sie sicher, das niemand Anderes den gleichen Computernamen hat).
+        \item Benennen Sie den Benutzer und Computername wie Sie möchten (Stellen Sie aber sicher, dass niemand Anderes den gleichen Computernamen hat).
+        Nehmen Sie sich ein einfaches Passwort, dass Sie sich merken können.
         \item Sie sind nun im Besitz einer VM, mit der man nun entsprechende Software für das Modul installieren kann.
         \item Starten Sie die VM neu nach der Installation und führen Sie ein Softwareupdate durch.
     \end{enumerate}
 \end{frame}
 
+
 \subsection{Alles was ein Softwareentwickler braucht}\label{subsec:software}
 \begin{frame}[fragile]
     In diesem Kapitel wird sämtliche Software installiert die Sie in diesem Modul benötigen.
 \end{frame}
+
+\subsubsection{GitHub}\label{subsubsec:github}
+\begin{frame}[fragile]
+    Falls Sie noch nicht über einen GitHub Account verfügen, erstellen Sie nun einen, Sie werden diesen in diesem Modul
+    zwingend Benötigen.
+    Folgen Sie diesem Link, falls Sie keinen GitHub Account haben: \href{https://github.com/join}{Join GitHub}.
+    \mode<article>{\vSpaceStyle{}}
+    Ansonsten gehen Sie weiter zum nächsten Kapitel.
+\end{frame}
+\newpage
+
+\subsubsection{Git}\label{subsubsec:git}
+\begin{frame}[fragile]
+    Auf Ihrer neu erstellten Ubuntu VM wird nun Git installiert.
+    \begin{enumerate}
+        \item Öffnen Sie das Terminal (Tastenkombination: \textbf{ctrl + alt + t})
+        \item Geben Sie folgenden Befehl als Erstes ein: \textbf{sudo apt-get install update}
+        \item Geben Sie folgenden Befehl ein um Git zu installieren: \textbf{sudo apt-get -y install git}
+        \item Somit haben Sie Git erfolgreich installiert.
+    \end{enumerate}
+    In den Modulunterlagen im Ordner 02\textunderscore Scrips finden Sie ein PDF namens progit.pdf lesen Sie nun
+    Kapitel 1 - 3 durch.
+    Sie können dies auch Online tun: \href{https://git-scm.com/book/en/v2}{Git Pro Book}
+    \mode<article>{\vSpaceStyle{}}
+    Es wird nun die basis Konfiguration für Git vorgenommen, Sie können diese in Kapitel 1 vom Git Pro pdf nachlesen.
+    \begin{enumerate}
+        \item Öffnen Sie das Terminal (Tastenkombination: \textbf{ctrl + alt + t})
+        \item Geben Sie folgenden Befehl ein um Ihren persönlichen Namen zu setzen: \newline\textbf{git config --global user.name "John Doe"}
+        \item Geben Sie folgenden Befehl ein um Ihre E-Mail-Adresse zu setzen: \newline\textbf{git config --global user.email johndoe@example.com}
+    \end{enumerate}
+\end{frame}
+
+
