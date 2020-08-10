@@ -10,6 +10,7 @@
 %%
 \mode*
 
+
 \section{Einleitung}
 \label{sec:einleitung}
 \mode<article>{\setcounter{page}{1}}
@@ -25,7 +26,6 @@
     Bevor Sie nun aber gleich anfang sich Gedanken zu einem Projekt zu machen, sollten Sie zu erste sicherstellen das
     Sie eine geeignete Arbeitsumgebung haben\ldots\newline Sie werden zum Projekt zu einem späteren Zeitpunkt noch die LB Vorgaben erhalten.
 \end{frame}
-
 
 \subsection{Modulidentifikation}
 \label{subsec:modulid}
@@ -46,7 +46,6 @@ Die Handlungsziele gemäss Modulidentifikation:
     \end{enumerate}
 \end{frame}
 
-
 \subsection{Interessante Links}\label{subsec:links}
 \begin{frame}[fragile]
     Hier finden Sie eine Auflistung der relevanten Links die Sie benötigen für Ihren ersten Arbeitsauftrag.
@@ -61,23 +60,23 @@ Die Handlungsziele gemäss Modulidentifikation:
         | >{\raggedright\arraybackslash}X
         | >{\raggedright\arraybackslash}X | }
             \hline
-            Ubuntu 20.04 & \href{https://ubuntu.com/}{Ubuntu} \\
+            Ubuntu 20.04               & \href{https://ubuntu.com/}{Ubuntu}                              \\
             \hline
-            IDE RubyMine & \href{https://www.jetbrains.com/de-de/ruby/}{RubyMine} \\
+            IDE RubyMine               & \href{https://www.jetbrains.com/de-de/ruby/}{RubyMine}          \\
             \hline
-            IDE PyCharm (Professional) & \href{https://www.jetbrains.com/de-de/pycharm/}{PyCharm} \\
+            IDE PyCharm (Professional) & \href{https://www.jetbrains.com/de-de/pycharm/}{PyCharm}        \\
             \hline
-            Git & \href{https://git-scm.com/}{Git} \\
+            Git                        & \href{https://git-scm.com/}{Git}                                \\
             \hline
-            GitHub & \href{https://github.com/}{GitHub} \\
+            GitHub                     & \href{https://github.com/}{GitHub}                              \\
             \hline
-            Ruby & \href{https://www.ruby-lang.org/de/}{Ruby} \\
+            Ruby                       & \href{https://www.ruby-lang.org/de/}{Ruby}                      \\
             \hline
-            Ruby on Rails & \href{https://guides.rubyonrails.org/index.html}{Ruby on Rails} \\
+            Ruby on Rails              & \href{https://guides.rubyonrails.org/index.html}{Ruby on Rails} \\
             \hline
-            Python & \href{https://www.python.org/}{Python} \\
+            Python                     & \href{https://www.python.org/}{Python}                          \\
             \hline
-            Django & \href{https://www.djangoproject.com/}{Django} \\
+            Django                     & \href{https://www.djangoproject.com/}{Django}                   \\
             \hline
         \end{tabularx}
         \caption{Software, Tools und Services}
@@ -88,14 +87,12 @@ Die Handlungsziele gemäss Modulidentifikation:
 %\figureStyle{width=0.25\textwidth}{GameScreen}{Game Screen}{fig:GameScreen}
 
 
-
 \section{Saubere Arbeitsumgebung}\label{sec:sauber}
 \begin{frame}[fragile]
     Damit alle über die gleichen Voraussetzungen für dieses Modul verfügen, wird hier eine kleine Anleitung zum
     Besten gegeben, wie das Sie eine neue Linux Ubuntu 20.04 VM installieren und dann dem entsprechend konfigurieren
     mit der Software die Sie benötigen werden für das Projekt.
 \end{frame}
-
 
 \subsection{VM installieren}\label{subsec:vminstallieren}
 \begin{frame}[fragile]
@@ -136,12 +133,12 @@ Die Handlungsziele gemäss Modulidentifikation:
 \end{frame}
 
 
-\subsection{Alles was ein Softwareentwickler braucht}\label{subsec:software}
+\section{Alles was ein Softwareentwickler braucht}\label{sec:software}
 \begin{frame}[fragile]
     In diesem Kapitel wird sämtliche Software installiert die Sie in diesem Modul benötigen.
 \end{frame}
 
-\subsubsection{GitHub}\label{subsubsec:github}
+\subsection{GitHub}\label{subsec:github}
 \begin{frame}[fragile]
     Falls Sie noch nicht über einen GitHub Account verfügen, erstellen Sie nun einen, Sie werden diesen in diesem Modul
     zwingend Benötigen.
@@ -151,7 +148,7 @@ Die Handlungsziele gemäss Modulidentifikation:
 \end{frame}
 \newpage
 
-\subsubsection{Git}\label{subsubsec:git}
+\subsection{Git}\label{subsec:git}
 \begin{frame}[fragile]
     Auf Ihrer neu erstellten Ubuntu VM wird nun Git installiert.
     \begin{enumerate}
@@ -167,12 +164,12 @@ Die Handlungsziele gemäss Modulidentifikation:
     Es wird nun die basis Konfiguration für Git vorgenommen, Sie können diese in Kapitel 1 vom Git Pro pdf nachlesen.
     \begin{enumerate}
         \item Öffnen Sie das Terminal (Tastenkombination: \textbf{ctrl + alt + t})
-        \item Geben Sie folgenden Befehl ein um Ihren persönlichen Namen zu setzen: \newline\textbf{git config --global user.name "John Doe"}
-        \item Geben Sie folgenden Befehl ein um Ihre E-Mail-Adresse zu setzen: \newline\textbf{git config --global user.email johndoe@example.com}
+        \item Geben Sie folgenden Befehl ein um Ihren persönlichen Namen zu setzen: \newline\textbf{git config \texttt{--}global user.name "John Doe"}
+        \item Geben Sie folgenden Befehl ein um Ihre E-Mail-Adresse zu setzen: \newline\textbf{git config \texttt{--}global user.email johndoe@example.com}
     \end{enumerate}
 \end{frame}
 
-\subsubsection{JetBrains Produkte}\label{subsubsec:jetbrains}
+\subsection{JetBrains Produkte}\label{subsec:jetbrains}
 \begin{frame}[fragile]
     Für die Entwicklung Ihres Projektes benötigen Sie eine von zwei Entwicklungsumgebungen.
     Beide stammen aus dem Hause JetBrains und bietet Ihnen, die entsprechende funktionalität, die eine IDE haben sollte.
@@ -195,14 +192,17 @@ Die Handlungsziele gemäss Modulidentifikation:
     Unterkapitels und installieren Sie beide IDE's.
 \end{frame}
 
+\subsubsection{JetBrains Account erstellen}\label{subsubsec:jetbrainsAccount}
 \begin{frame}[fragile]
-
-    Registrieren Sie sich auf JetBrains mit ihrer Schul-E-Mail-Adresse.
-    https://account.jetbrains.com/login
-
-    Bewerben Sie sich für das Studentenprogramm von JetBrains (mit der Schul-E-Mail-Adresse).
-    Dies bewirkt, dass ihr soeben erstellter Account kostenlos alle JetBrains Produkte für nicht kommerzielle Zwecke verwenden kann.
-    (Beantworten Sie alle Fragen des Webformulars wahrheitsgetreu)
-    https://www.jetbrains.com/shop/eform/students
+    \begin{enumerate}
+        \item Registrieren Sie sich auf JetBrains mit ihrer Schul-E-Mail-Adresse.
+        \href{https://account.jetbrains.com/login}{JetBrains Register}
+        \figureStyle{width=0.60\textwidth}{07_not_registered}{JetBrains Registrierung}{fig:jetbrainsRegister}
+        \item Bewerben Sie sich für das Studentenprogramm von JetBrains (mit der Schul-E-Mail-Adresse).
+        Dies bewirkt, dass ihr soeben erstellter Account kostenlos alle JetBrains Produkte für nicht kommerzielle Zwecke verwenden kann.
+        \textbf{(Beantworten Sie alle Fragen des Webformulars wahrheitsgetreu)}
+        \href{https://www.jetbrains.com/shop/eform/students}{JetBrains Students}
+        (Wählen Sie die Sparte: \textbf{University Email Address})
+    \end{enumerate}
 \end{frame}
 
