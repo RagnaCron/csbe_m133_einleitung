@@ -17,14 +17,14 @@
 
 \begin{frame}[fragile]
     \mode<article>{}
-    Geschätzte Inf19P, in diesem Modul (133) soll eine Web-Applikation mit Session-Handling realisiert werden, dies wird
+    Geschätzte INF19P, in diesem Modul (133) soll eine Web-Applikation mit Session-Handling realisiert werden, dies wird
     mit einem Framework bewerkstelligt.
     In den Modulunterlagen wird dabei auf Ruby on Rails zurückgegriffen.
     Sie sollen in diesem Modul ein Projekt mit Dokumentation erarbeiten, dies werden Sie in Einzelarbeit machen.
 
-    Bevor Sie nun aber gleich anfang sich Gedanken zu einem Projekt zu machen, sollten Sie zu erste sicherstellen das
-    Sie eine geeignete Arbeitsumgebung haben\ldots
-    Sie werden die Vorgaben für die LB (Projekt und Dokumentation) zu einem späteren Zeitpunkt erhalten.
+    Bevor Sie nun aber gleich anfangen sich Gedanken zu einem Projekt zu machen, sollten Sie zu erste sicherstellen das
+    Sie eine geeignete Arbeitsumgebung haben\ldots\space
+    Sie werden die Vorgaben für die LB (Projekt und dazugehörige Dokumentation) zu einem späteren Zeitpunkt erhalten.
 \end{frame}
 
 \subsection{Modulidentifikation}
@@ -59,17 +59,17 @@ Die Handlungsziele gemäss Modulidentifikation:
         | >{\raggedright\arraybackslash}X
         | >{\raggedright\arraybackslash}X | }
             \hline
-            Ubuntu 20.04               & \href{https://ubuntu.com/}{Ubuntu}                              \\
+            Ubuntu 20.04  & \href{https://ubuntu.com/}{Ubuntu}                              \\
             \hline
-            Git                        & \href{https://git-scm.com/}{Git}                                \\
+            Git           & \href{https://git-scm.com/}{Git}                                \\
             \hline
-            GitHub                     & \href{https://github.com/}{GitHub}                              \\
+            GitHub        & \href{https://github.com/}{GitHub}                              \\
             \hline
-            IDE RubyMine               & \href{https://www.jetbrains.com/de-de/ruby/}{RubyMine}          \\
+            IDE RubyMine  & \href{https://www.jetbrains.com/de-de/ruby/}{RubyMine}          \\
             \hline
-            Ruby                       & \href{https://www.ruby-lang.org/de/}{Ruby}                      \\
+            Ruby          & \href{https://www.ruby-lang.org/de/}{Ruby}                      \\
             \hline
-            Ruby on Rails              & \href{https://guides.rubyonrails.org/index.html}{Ruby on Rails} \\
+            Ruby on Rails & \href{https://guides.rubyonrails.org/index.html}{Ruby on Rails} \\
             \hline
         \end{tabularx}
         \caption{Software, Tools und Services}
@@ -88,7 +88,7 @@ Die Handlungsziele gemäss Modulidentifikation:
 \subsection{VM installieren}\label{subsec:vminstallieren}
 \begin{frame}[fragile]
     Für die neue Installation von einem Ubuntu 20.04 benötigen Sie zu erste Mal das ISO, dieses können Sie
-    unter dem Ordner "Software4CsBe dann ISO" holen.
+    unter der Freigabe Z: \textquotedblright Software4CsBe\textquotedblright\space im entsprechenden Ordner ISO holen.
     Während Sie auf den Download warten, beginnen Sie mit der Konfiguration der neuen VM.
 \end{frame}
 
@@ -98,7 +98,7 @@ Die Handlungsziele gemäss Modulidentifikation:
         \figureStyle{width=0.50\textwidth}{01_CreateVM}{Neue VM erstellen}{fig:createVM}
         \item Sie wollen das ISO zu einem späteren Zeitpunkt übergeben, wählen Sie die entsprechende Option.
         \figureStyle{width=0.60\textwidth}{02_iso_later}{Installiere das OS später}{fig:isolater}
-        \item Wählen Sie nun Betriebssystem aus das Sie später installieren wollen.
+        \item Wählen Sie nun das Betriebssystem aus das Sie später installieren wollen.
         \figureStyle{width=0.60\textwidth}{03_guest_os}{Betriebssystem wählen}{fig:guestOS}
         \item Geben Sie der VM einen Namen, z.B. "vmUbuntu20.04\textunderscore M133", für den Speicherort Ihrer VM wählen Sie die eigene
         SSD aus (Somit Sie selbstverständlich auch von zu Hause aus arbeiten können).
@@ -106,7 +106,7 @@ Die Handlungsziele gemäss Modulidentifikation:
         \item Geben Sie Ihrer VM eine Disk grösse von ca. 60 GB und speichern Sie diese als single file.
         \figureStyle{width=0.70\textwidth}{05_disk_size}{Disk grösse \& Single File}{fig:diskSize}
         \item Schliessen Sie nun die Konfiguration mit Finish ab.
-        \item Nun sollte das ISO in der Zwischenzeit heruntergeladen Sein.
+        \item Nun sollte das ISO in der Zwischenzeit heruntergeladen sein.
         Übergeben Sie dieses und speichern dann.
         \item Starten Sie die VM und stellen Sie die Installation des Betriebssystems fertig.
         \item Wählen Sie entweder Deutsch oder Englisch für die Sprache aus (Wenn Sie eine andere Sprache wählen kann ich ihnen keine Hilfe geben bei ihrer VM, falls sie probleme hat.)
@@ -117,8 +117,8 @@ Die Handlungsziele gemäss Modulidentifikation:
         \item Kicken Sie nun auf Installieren.
         \item Benennen Sie den Benutzer und Computername wie Sie möchten (Stellen Sie aber sicher, dass niemand Anderes den gleichen Computernamen hat).
         Nehmen Sie sich ein einfaches Passwort, dass Sie sich merken können.
-        \item Sie sind nun im Besitz einer VM, mit der man nun entsprechende Software für das Modul installieren kann.
-        \item Führen Sie ein Softwareupdate durch und starten die VM anschliessend neu.
+        \item Sie sind nun im Besitz einer VM, mit der man entsprechende Software für das Modul installieren kann.
+        \item Führen Sie ein Softwareupdate durch und starten Sie die VM anschliessend neu.
     \end{enumerate}
 \end{frame}
 
@@ -132,9 +132,11 @@ Die Handlungsziele gemäss Modulidentifikation:
     \textbf{Tipp}
     \vSpaceStyle{0.1em}
 
-    Für Übungszwecke tippen Sie die Befehle von Hand ein und kopieren Sie diese nicht einfach\ldots und geben Sie keinen
+    Für Übungszwecke tippen Sie die Befehle von Hand ein und kopieren Sie diese nicht einfach\ldots\space und geben Sie keinen
     Befehl ein dem Sie nicht verstehen.
     Um zu wissen, was ein Befehl macht, zum Beispiel \textbf{rm} (steht für Remove) geben Sie denn Befehl: \textbf{man rm} ein.
+    Ersetzten Sie \textbf{rm} um andere Manpages zu öffnen.
+    Drücken Sie die Taste \textbf{Q} um die Manpages zu verlassen.
 \end{frame}
 
 \subsection{GitHub}\label{subsec:github}
@@ -146,7 +148,6 @@ Die Handlungsziele gemäss Modulidentifikation:
     Ansonsten gehen Sie weiter zum nächsten Kapitel.
 \end{frame}
 
-
 \subsection{Git}\label{subsec:git}
 \begin{frame}[fragile]
     Auf Ihrer neu erstellten Ubuntu VM wird nun Git installiert.
@@ -155,14 +156,14 @@ Die Handlungsziele gemäss Modulidentifikation:
         \item Geben Sie folgenden Befehl als Erstes ein: \textbf{sudo apt-get install update}
         \item Geben Sie folgenden Befehl ein um Git zu installieren: \textbf{sudo apt-get -y install git}
         \item Somit haben Sie Git erfolgreich installiert.
-        \item Testen Sie ob es auch funktioniert mit dem Befehl: \textbf{git \texttt{--}version} Sie sollten dabei 
+        \item Testen Sie ob es auch funktioniert mit dem Befehl: \textbf{git \texttt{--}version} Sie sollten dabei
         die Version von git sehen.
     \end{enumerate}
-    In den Modulunterlagen im Ordner 02\textunderscore Scrips finden Sie ein PDF namens progit.pdf lesen Sie nun
+    In den Modulunterlagen im Ordner 02\textunderscore Scrips finden Sie ein PDF namens \textbf{progit.pdf} lesen Sie nun
     Kapitel 1 - 3 durch.
     Sie können dies auch Online tun: \href{https://git-scm.com/book/en/v2}{Git Pro Book}
 
-    Es wird nun die basis Konfiguration für Git vorgenommen, Sie können diese in Kapitel 1 vom Git Pro pdf nachlesen.
+    Es wird nun die basis Konfiguration für Git vorgenommen, Sie können diese in Kapitel 1 vom \textbf{progit.pdf} nachlesen.
     \begin{enumerate}
         \item Öffnen Sie das Terminal (Tastenkombination: \textbf{ctrl + alt + t})
         \item Geben Sie folgenden Befehl ein um Ihren persönlichen Namen zu setzen: \newline\textbf{git config \texttt{--}global user.name "John Doe"}
@@ -173,7 +174,7 @@ Die Handlungsziele gemäss Modulidentifikation:
 \subsection{Sqlite3 Installieren}\label{subsec:sqlite3}
 \begin{frame}[fragile]
     Installieren Sie nun Sqlite3 mit folgendem Befehl: \textbf{sudo apt-get install -y sqlite3}\newline
-    Testen Sie Ihre Installationvon Sqlite3 mit dem Befehl: \textbf{sqlite3 \texttt{--}version}
+    Testen Sie Ihre Installation von Sqlite3 mit dem Befehl: \textbf{sqlite3 \texttt{--}version}
 
     Sie sollten dabei die Version von Sqlite3 sehen.
 \end{frame}
@@ -184,7 +185,7 @@ Die Handlungsziele gemäss Modulidentifikation:
 
     Testen Sie die Ruby Installation mit dem Befehl: \textbf{ruby \texttt{--}version}
 
-    Um die noch einen abschliessenden Test mit Ruby zu machen, geben Sie folgendes in die das Terminal ein:
+    Um noch einen abschliessenden Test mit Ruby zu machen, geben Sie folgendes in das Terminal ein:
     \vSpaceStyle{0.1em}
 
     \textbf{cd ~/Desktop}
@@ -198,8 +199,8 @@ Die Handlungsziele gemäss Modulidentifikation:
 
 \subsection{JetBrains Produkte}\label{subsec:jetbrains}
 \begin{frame}[fragile]
-    Für die Entwicklung Ihres Projektes benötigen Sie eine von zwei Entwicklungsumgebungen.
-    Beide stammen aus dem Hause JetBrains und bietet Ihnen, die entsprechende funktionalität, die eine IDE haben sollte.
+    Für die Entwicklung Ihres Projektes benötigen Sie eine Entwicklungsumgebungen.
+    Diese stammt aus dem Hause JetBrains und bietet Ihnen, die entsprechende funktionalität, die eine IDE haben sollte.
 
     Programmierunterstützende Tools nennen sich IDE / (Integrated Development Environment) /
     Integrierte Entwicklungsumgebung.
@@ -207,20 +208,19 @@ Die Handlungsziele gemäss Modulidentifikation:
     \begin{itemize}
         \item Autovervollständigung
         \item IntelliSense (Vervollständigung und Lernfähige Bibliothek)
-        \item Integration in Versionisierungssysteme
+        \item Integration in Versionisierungssysteme (Git)
         \item Hilfsmittel zur gemeinsamen Zusammenarbeit
         \item Integration in das Datenbankschema (Visualisierte Darstellung der Datenbank)
         \item Ggf. Grafische Editoren
         \item Ggf. Automatische Code-Generierung
         \item Uvm.
     \end{itemize}
-
-    Falls Sie bereits durch ein früheres Modul über einen JetBrains Account verfügen, gehen sie zum Ende dieses
-    Unterkapitels und installieren Sie beide IDE's.
 \end{frame}
 
 \subsubsection{JetBrains Account erstellen}\label{subsubsec:jetbrainsAccount}
 \begin{frame}[fragile]
+    Falls Sie bereits durch ein früheres Modul über einen JetBrains Account verfügen, gehen sie zum Ende dieses
+    Unterkapitels und installieren Sie die IDE.
     \begin{enumerate}
         \item Registrieren Sie sich auf JetBrains mit ihrer Schul-E-Mail-Adresse.
         \href{https://account.jetbrains.com/login}{JetBrains Register}
@@ -244,6 +244,8 @@ Die Handlungsziele gemäss Modulidentifikation:
 \end{frame}
 
 \newpage
+
+
 \section{Erstes arbeiten in Ihrer neuen VM}\label{sec:erstesarbeiten}
 \begin{frame}[fragile]
     Sie könnten nun auch gleich mit den Modulunterlagen weiterarbeiten, aber bevor Sie dies tun, sollten Sie zuerst mal
@@ -255,7 +257,7 @@ Die Handlungsziele gemäss Modulidentifikation:
 \begin{frame}[fragile]
     Erarbeiten Sie sich aus den Modulunterlagen im Ordner 02\textunderscore Skripte im Script \textbf{RubyIntroduction.pdf} ein grundlegendes Verständnis
     über Ruby. (Hier arbeiten Sie im Terminal, die IDE RubyMine sollte Sie dabei nicht verwenden.)
-    Es ist aber, Ihnen überlassen ob Sie dies machen möchten, da Sie auch gleich mit dem \textbf{AB133-01.pdf} beginnen können.
+    Es ist aber, Ihnen überlassen ob Sie dies machen möchten, da Sie auch gleich mit dem \textbf{AB133-01.pdf} beginnen könnten.
 \end{frame}
 
 \begin{frame}[fragile]
@@ -265,7 +267,7 @@ Die Handlungsziele gemäss Modulidentifikation:
     \textbf{Wichtig}
     \vSpaceStyle{0.1em}
 
-    Es ist keine Vorgabe mit RubyMine zu arbeiten, Sie könnten dazu auch jeden anderen beliebigen Editor verwende.
-    Aber Sie erleichtern Ihre arbeit und erhöhen auch Ihre Arbeitsgeschwindigkeit um ein Vielfaches, wenn Sie in der Lage
+    Es ist keine Vorgabe mit RubyMine zu arbeiten, Sie könnten dazu auch jeden anderen beliebigen Editor verwenden.
+    Aber Sie erleichtern sich Ihre arbeit und erhöhen auch Ihre Arbeitsgeschwindigkeit um ein Vielfaches, wenn Sie in der Lage
     sind mit einer IDE effizient zu arbeiten.
 \end{frame}
