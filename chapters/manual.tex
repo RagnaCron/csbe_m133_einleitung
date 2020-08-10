@@ -17,14 +17,14 @@
 
 \begin{frame}[fragile]
     \mode<article>{}
-    Geschätzte Inf19P, in diesem Modul (133) soll eine Web-Applikation mit Session-Handling realisiert werden, dies soll
-    mit einem Framework bewerkstelligt werden.
-    Dazu stehen uns zwei Möglichkeiten zur Verfügung, in den Modulunterlagen die vorliegen, können Sie mit Ruby on Rails arbeiten
-    oder Sie wählen Python mit Django zusammen.
+    Geschätzte Inf19P, in diesem Modul (133) soll eine Web-Applikation mit Session-Handling realisiert werden, dies wird
+    mit einem Framework bewerkstelligt.
+    In den Modulunterlagen wird dabei auf Ruby on Rails zurückgegriffen.
     Sie sollen in diesem Modul ein Projekt mit Dokumentation erarbeiten, dies werden Sie in Einzelarbeit machen.
-    \mode<article>{\vSpaceStyle{}}
+
     Bevor Sie nun aber gleich anfang sich Gedanken zu einem Projekt zu machen, sollten Sie zu erste sicherstellen das
-    Sie eine geeignete Arbeitsumgebung haben\ldots\newline Sie werden zum Projekt zu einem späteren Zeitpunkt noch die LB Vorgaben erhalten.
+    Sie eine geeignete Arbeitsumgebung haben\ldots
+    Sie werden die Vorgaben für die LB (Projekt und Dokumentation) zu einem späteren Zeitpunkt erhalten.
 \end{frame}
 
 \subsection{Modulidentifikation}
@@ -51,7 +51,6 @@ Die Handlungsziele gemäss Modulidentifikation:
     Hier finden Sie eine Auflistung der relevanten Links die Sie benötigen für Ihren ersten Arbeitsauftrag.
 \end{frame}
 
-
 \begin{frame}[fragile]
     \frametitle<presentation>{Software, Tools und Services}
     \begin{table}[h!]
@@ -62,29 +61,21 @@ Die Handlungsziele gemäss Modulidentifikation:
             \hline
             Ubuntu 20.04               & \href{https://ubuntu.com/}{Ubuntu}                              \\
             \hline
-            IDE RubyMine               & \href{https://www.jetbrains.com/de-de/ruby/}{RubyMine}          \\
-            \hline
-            IDE PyCharm (Professional) & \href{https://www.jetbrains.com/de-de/pycharm/}{PyCharm}        \\
-            \hline
             Git                        & \href{https://git-scm.com/}{Git}                                \\
             \hline
             GitHub                     & \href{https://github.com/}{GitHub}                              \\
             \hline
+            IDE RubyMine               & \href{https://www.jetbrains.com/de-de/ruby/}{RubyMine}          \\
+            \hline
             Ruby                       & \href{https://www.ruby-lang.org/de/}{Ruby}                      \\
             \hline
             Ruby on Rails              & \href{https://guides.rubyonrails.org/index.html}{Ruby on Rails} \\
-            \hline
-            Python                     & \href{https://www.python.org/}{Python}                          \\
-            \hline
-            Django                     & \href{https://www.djangoproject.com/}{Django}                   \\
             \hline
         \end{tabularx}
         \caption{Software, Tools und Services}
         \label{tab:2}
     \end{table}
 \end{frame}
-
-%\figureStyle{width=0.25\textwidth}{GameScreen}{Game Screen}{fig:GameScreen}
 
 
 \section{Saubere Arbeitsumgebung}\label{sec:sauber}
@@ -102,17 +93,16 @@ Die Handlungsziele gemäss Modulidentifikation:
 \end{frame}
 
 \begin{frame}[fragile]
-    \mode<article>{\vSpaceStyle{}}
     \begin{enumerate}
         \item Öffnen Sie VMWare Player und erstellen Sie eine neue VM.
         \figureStyle{width=0.50\textwidth}{01_CreateVM}{Neue VM erstellen}{fig:createVM}
         \item Sie wollen das ISO zu einem späteren Zeitpunkt übergeben, wählen Sie die entsprechende Option.
         \figureStyle{width=0.60\textwidth}{02_iso_later}{Installiere das OS später}{fig:isolater}
         \item Wählen Sie nun Betriebssystem aus das Sie später installieren wollen.
-        \figureStyle{width=0.60\textwidth}{03_guest_os}{Betriebssystem wählen}{fig:guestOS} \newpage
+        \figureStyle{width=0.60\textwidth}{03_guest_os}{Betriebssystem wählen}{fig:guestOS}
         \item Geben Sie der VM einen Namen, z.B. "vmUbuntu20.04\textunderscore M133", für den Speicherort Ihrer VM wählen Sie die eigene
         SSD aus (Somit Sie selbstverständlich auch von zu Hause aus arbeiten können).
-        \figureStyle{width=0.70\textwidth}{04_vm_name}{VM Name \& Speicherort}{fig:saveVM}
+        \figureStyle{width=0.70\textwidth}{04_vm_name}{VM Name \& Speicherort}{fig:saveVM} \newpage
         \item Geben Sie Ihrer VM eine Disk grösse von ca. 60 GB und speichern Sie diese als single file.
         \figureStyle{width=0.70\textwidth}{05_disk_size}{Disk grösse \& Single File}{fig:diskSize}
         \item Schliessen Sie nun die Konfiguration mit Finish ab.
@@ -121,14 +111,14 @@ Die Handlungsziele gemäss Modulidentifikation:
         \item Starten Sie die VM und stellen Sie die Installation des Betriebssystems fertig.
         \item Wählen Sie entweder Deutsch oder Englisch für die Sprache aus (Wenn Sie eine andere Sprache wählen kann ich ihnen keine Hilfe geben bei ihrer VM, falls sie probleme hat.)
         Klicken Sie auf Install Ubuntu.
-        \item Suchen Sie das richtige Tastaturlayout aus. (Dazu können Sie auch auf Tastaturbelegung automatisch erkennen klicken) \newpage
+        \item Suchen Sie das richtige Tastaturlayout aus. (Dazu können Sie auch auf Tastaturbelegung automatisch erkennen klicken)
         \item Wählen Sie nun folgende Konfiguration aus.
         \figureStyle{width=0.80\textwidth}{06_config}{Minimale Konfiguration}{fig:configVM}
         \item Kicken Sie nun auf Installieren.
         \item Benennen Sie den Benutzer und Computername wie Sie möchten (Stellen Sie aber sicher, dass niemand Anderes den gleichen Computernamen hat).
         Nehmen Sie sich ein einfaches Passwort, dass Sie sich merken können.
         \item Sie sind nun im Besitz einer VM, mit der man nun entsprechende Software für das Modul installieren kann.
-        \item Starten Sie die VM neu nach der Installation und führen Sie ein Softwareupdate durch.
+        \item Führen Sie ein Softwareupdate durch und starten die VM anschliessend neu.
     \end{enumerate}
 \end{frame}
 
@@ -136,6 +126,15 @@ Die Handlungsziele gemäss Modulidentifikation:
 \section{Alles was ein Softwareentwickler braucht}\label{sec:software}
 \begin{frame}[fragile]
     In diesem Kapitel wird sämtliche Software installiert die Sie in diesem Modul benötigen.
+
+    \textbf{Die Installation sämtlicher Software wird über das Terminal gehandhabt.}
+
+    \textbf{Tipp}
+    \vSpaceStyle{0.1em}
+
+    Für Übungszwecke tippen Sie die Befehle von Hand ein und kopieren Sie diese nicht einfach\ldots und geben Sie keinen
+    Befehl ein dem Sie nicht verstehen.
+    Um zu wissen, was ein Befehl macht, zum Beispiel \textbf{rm} (steht für Remove) geben Sie denn Befehl: \textbf{man rm} ein.
 \end{frame}
 
 \subsection{GitHub}\label{subsec:github}
@@ -143,10 +142,10 @@ Die Handlungsziele gemäss Modulidentifikation:
     Falls Sie noch nicht über einen GitHub Account verfügen, erstellen Sie nun einen, Sie werden diesen in diesem Modul
     zwingend Benötigen.
     Folgen Sie diesem Link, falls Sie keinen GitHub Account haben: \href{https://github.com/join}{Join GitHub}.
-    \mode<article>{\vSpaceStyle{}}
+
     Ansonsten gehen Sie weiter zum nächsten Kapitel.
 \end{frame}
-\newpage
+
 
 \subsection{Git}\label{subsec:git}
 \begin{frame}[fragile]
@@ -156,11 +155,13 @@ Die Handlungsziele gemäss Modulidentifikation:
         \item Geben Sie folgenden Befehl als Erstes ein: \textbf{sudo apt-get install update}
         \item Geben Sie folgenden Befehl ein um Git zu installieren: \textbf{sudo apt-get -y install git}
         \item Somit haben Sie Git erfolgreich installiert.
+        \item Testen Sie ob es auch funktioniert mit dem Befehl: \textbf{git \texttt{--}version} Sie sollten dabei 
+        die Version von git sehen.
     \end{enumerate}
     In den Modulunterlagen im Ordner 02\textunderscore Scrips finden Sie ein PDF namens progit.pdf lesen Sie nun
     Kapitel 1 - 3 durch.
     Sie können dies auch Online tun: \href{https://git-scm.com/book/en/v2}{Git Pro Book}
-    \mode<article>{\vSpaceStyle{}}
+
     Es wird nun die basis Konfiguration für Git vorgenommen, Sie können diese in Kapitel 1 vom Git Pro pdf nachlesen.
     \begin{enumerate}
         \item Öffnen Sie das Terminal (Tastenkombination: \textbf{ctrl + alt + t})
@@ -169,11 +170,37 @@ Die Handlungsziele gemäss Modulidentifikation:
     \end{enumerate}
 \end{frame}
 
+\subsection{Sqlite3 Installieren}\label{subsec:sqlite3}
+\begin{frame}[fragile]
+    Installieren Sie nun Sqlite3 mit folgendem Befehl: \textbf{sudo apt-get install -y sqlite3}\newline
+    Testen Sie Ihre Installationvon Sqlite3 mit dem Befehl: \textbf{sqlite3 \texttt{--}version}
+
+    Sie sollten dabei die Version von Sqlite3 sehen.
+\end{frame}
+
+\subsection{Ruby Installieren}\label{subsec:rubyinstallieren}
+\begin{frame}[fragile]
+    Installieren Sie nun Ruby mit folgendem Befehl: \textbf{sudo apt-get install -y ruby-full}
+
+    Testen Sie die Ruby Installation mit dem Befehl: \textbf{ruby \texttt{--}version}
+
+    Um die noch einen abschliessenden Test mit Ruby zu machen, geben Sie folgendes in die das Terminal ein:
+    \vSpaceStyle{0.1em}
+
+    \textbf{cd ~/Desktop}
+    \vSpaceStyle{0.1em}
+
+    \textbf{echo 'puts "Hello, world!"\space\textquoteright > HelloWorld.rb}
+    \vSpaceStyle{0.1em}
+
+    \textbf{ruby HelloWorld.rb}
+\end{frame}
+
 \subsection{JetBrains Produkte}\label{subsec:jetbrains}
 \begin{frame}[fragile]
     Für die Entwicklung Ihres Projektes benötigen Sie eine von zwei Entwicklungsumgebungen.
     Beide stammen aus dem Hause JetBrains und bietet Ihnen, die entsprechende funktionalität, die eine IDE haben sollte.
-    \mode<article>{\vSpaceStyle{}}
+
     Programmierunterstützende Tools nennen sich IDE / (Integrated Development Environment) /
     Integrierte Entwicklungsumgebung.
     Diese Entwicklungsumgebungen verfügen meist über folgende Features:
@@ -187,7 +214,7 @@ Die Handlungsziele gemäss Modulidentifikation:
         \item Ggf. Automatische Code-Generierung
         \item Uvm.
     \end{itemize}
-    \mode<article>{\vSpaceStyle{}}
+
     Falls Sie bereits durch ein früheres Modul über einen JetBrains Account verfügen, gehen sie zum Ende dieses
     Unterkapitels und installieren Sie beide IDE's.
 \end{frame}
@@ -206,14 +233,39 @@ Die Handlungsziele gemäss Modulidentifikation:
     \end{enumerate}
 \end{frame}
 
-\subsubsection{PyCharm Pro Installation}\label{subsubsec:pycharmpro}
-\begin{frame}[fragile]
-    Für die Installation von PyCharm Pro öffnen Sie das Terminal und geben folgenden Befehl ein:\newline
-    \textbf{sudo snap install pycharm-professional \texttt{--}classic}
-\end{frame}
-
 \subsubsection{RubyMine Installation}\label{subsubsec:RubyMine}
 \begin{frame}[fragile]
     Für die Installation von RubyMine öffnen Sie das Terminal und geben folgenden Befehl ein:\newline
     \textbf{sudo snap install rubymine \texttt{--}classic}
+
+    Testen Sie ihre installation mit dem Befehl: \textbf{rubymine \&}
+
+    Das Undzeichen steht dafür, das der Prozess im Hintergrund gestartet wird, somit kann das Terminal weiterhin verwendet werden.
+\end{frame}
+
+\newpage
+\section{Erstes arbeiten in Ihrer neuen VM}\label{sec:erstesarbeiten}
+\begin{frame}[fragile]
+    Sie könnten nun auch gleich mit den Modulunterlagen weiterarbeiten, aber bevor Sie dies tun, sollten Sie zuerst mal
+    das Manuskript \textbf{Modulleitfaden\textunderscore 133.pdf} durchlesen.
+    Studieren Sie den Inhalt gut, da er für Ihre Zukunft als Applikationsentwickler eine wichtige Grundlage bildet.
+\end{frame}
+
+\subsection{Ruby gehversuche}\label{subsec:rubygehversuche}
+\begin{frame}[fragile]
+    Erarbeiten Sie sich aus den Modulunterlagen im Ordner 02\textunderscore Skripte im Script \textbf{RubyIntroduction.pdf} ein grundlegendes Verständnis
+    über Ruby. (Hier arbeiten Sie im Terminal, die IDE RubyMine sollte Sie dabei nicht verwenden.)
+    Es ist aber, Ihnen überlassen ob Sie dies machen möchten, da Sie auch gleich mit dem \textbf{AB133-01.pdf} beginnen können.
+\end{frame}
+
+\begin{frame}[fragile]
+    Nun da Sie die ersten Schritte mit Ruby abgeschlossen haben, wird es Zeit das Sie in den Modulunterlagen im Ordner
+    03\textunderscore Lerneinheiten mit dem ersten Arbeitsblatt (\textbf{AB133-01.pdf}) beginnen.
+    \mode<article>{\vSpaceStyle{}}
+    \textbf{Wichtig}
+    \vSpaceStyle{0.1em}
+
+    Es ist keine Vorgabe mit RubyMine zu arbeiten, Sie könnten dazu auch jeden anderen beliebigen Editor verwende.
+    Aber Sie erleichtern Ihre arbeit und erhöhen auch Ihre Arbeitsgeschwindigkeit um ein Vielfaches, wenn Sie in der Lage
+    sind mit einer IDE effizient zu arbeiten.
 \end{frame}
