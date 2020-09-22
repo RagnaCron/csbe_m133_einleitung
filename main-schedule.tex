@@ -11,11 +11,19 @@
 %! Date = 22.09.20
 
 % Preamble
-\documentclass[11pt]{manual}
+\documentclass[landscape, 11pt]{manual}
 
 % Document
 \begin{document}
+    \pagestyle{plain}
+    \fancyhf{}
 
-    \input{./chapters/HeaderFooter}
+    \lhead{Modulplanung}
+    \chead{Modul 133}
+    \rhead{\gitAuthorDate}
+    \lfoot{(C) 2020 \gitAuthor}
+    \cfoot{\gitStyler}
+    \rfoot{Seite \thepage}
+
 
 \end{document}
