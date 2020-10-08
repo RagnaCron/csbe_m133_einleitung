@@ -10,20 +10,141 @@
 %%
 %! Date = 22.09.20
 
+
 % Preamble
-\documentclass[landscape, 11pt]{manual}
+\documentclass[landscape,11pt,table]{manual}
+
+\usepackage{longtable}
+\usepackage{multirow}
 
 % Document
 \begin{document}
     \pagestyle{plain}
     \fancyhf{}
-
-    \lhead{Modulplanung}
-    \chead{Modul 133}
+    \lhead{Modul 133}
+    \chead{Webapplikation mit Session-Handling realisieren}
     \rhead{\gitAuthorDate}
-    \lfoot{(C) 2020 \gitAuthor}
+    \lfoot{CSBE \copyright\space 2020 Manuel Werder, Bruno Trachsel}
     \cfoot{\gitStyler}
     \rfoot{Seite \thepage}
 
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{ p{0.2\textwidth} p{\textwidth} }
+        {{\raggedright}
+        {\raggedright}}
+            \textbf{Klasse:} & INF 19P \\ [1em]
+            \textbf{LBV:}  & \textbf{LBV Modul 133 \textemdash\space 2 Elemente \textemdash\space Schriftliche Einzelprüfung, Projektarbeit mit Dokumentation} \\
+            \textbf{Fachmodul:} & 133 Webapplikation mit Session-Handling realisieren \\
+            \textbf{Kompetenzziel:} & Webapplikation gemäss Vorgabe mit einer Programmiersprache realisieren und testen. \\
+            \textbf{Kompetenzfeld:} & Web Engineering \\
+            \textbf{Fachliteratur:} & Modul Scripte, 100, 101, 105, 133, 403, 404, (226A, 226B)\newline
+            \href{http://openbook.rheinwerk-verlag.de/webdesign/}{Webdesign Das Handbuch zur Webgestaltung}\newline
+            ISBN 978-3-8362-4402-2, 2. Auflage, 2017\newline
+            \href{http://openbook.rheinwerk-verlag.de/oop/}{Objektorientierte Programmierung Das umfassende Handbuch}\newline
+            ISBN 978-3-8362-1401-8, 2., aktualisierte und erweiterte\newline
+            \href{http://openbook.rheinwerk-verlag.de/it_handbuch/}{IT-Handbuch für Fachinformatiker}\newline
+            ISBN 978-3-8362-2234-1, 6. aktualisierte und überarbeitete Auflage\newline
+            \href{http://openbook.rheinwerk-verlag.de/linux/}{Linux Das umfassende Handbuch}\newline
+            ISBN 978-3-8362-1822-1\\
+        \end{tabular}\label{tab:table1}
+    \end{table}
+
+    \begin{tabularx}{\textwidth} {
+    | >{\hsize=.1\textwidth\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X | }
+        \hline
+        \multicolumn{5}{|c|}{\cellcolor{lightgray}\textbf{\large Übersicht Unterrichtsprogramm}} \\
+        \hline
+        \hline
+        \rowcolor{lightgray}
+        \textbf{Tag \& Datum} &
+        \textbf{Inhalt} &
+        \textbf{Lehrmittel} &
+        \textbf{Lernziele} &
+        \textbf{Selbständiges Lernen / Auftrag / Übungen} \\
+        \hline
+        1, 11.08.20 &
+        Vorbereitung für Modul 133,
+        Modulidentifikation lesen und erarbeiten des Inhaltes 00\textunderscore EinleitungModul133&
+        Modulidentifikation.pdf, 00\textunderscore EinleitungModul133.pdf &
+        Verstehen die Lernziele des Moduls,
+        haben eine VM neu aufgesetzt und ihre arbeitsumgebung eingerichtet.&
+        Selbständiges Arbeiten \\
+        \hline
+        2, 12.08.20 &
+        Vorbereitung für Modul 133,
+        00\textunderscore EinleitungModul133 fertigstellen
+        und Lerneinheit AB133-01 erarbeiten &
+        00\textunderscore EinleitungModul133.pdf,
+        Lerneinheit AB133-01.pdf &
+        Lerneinheiten erarbeiten,
+        Grundlagen Ruby verstehen,
+        Ruby on Rails erste versuche abgeschlossen &
+        Selbständiges Arbeiten \\
+        \hline
+        3, 26.08.20 &
+        AB133-02 und
+        AB133-03 erarbeiten,
+        Besprechung für die Leistungsbeurteilung 2 (Documentation und Projekt) &
+        AB133-02.pdf,
+        AB133-03.pdf &
+        Statische Seite mit Rails erstellen, editieren und mit Twitter-
+        Bootstrap designen gemäss AB133-02,
+        MVC – Model View Controller: Model (Datenbank) erstellen und in
+        View anzeigen gemäss AB133-03 &
+        Begleiteter Unterricht,
+        Selbständiges Arbeiten \\
+        \hline
+    \end{tabularx}
+
+    \newpage
+
+    \begin{tabularx}{\textwidth} {
+    | >{\hsize=.1\textwidth\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X | }
+        \hline
+        \rowcolor{lightgray}
+        \textbf{Tag \& Datum} &
+        \textbf{Inhalt} &
+        \textbf{Lehrmittel} &
+        \textbf{Lernziele} &
+        \textbf{Selbständiges Lernen / Auftrag / Übungen} \\
+        \hline
+        4, 01.09.20 &
+        AB133-04 und
+        AB133-05 erarbeiten,
+        Besprechung der Mockups gemäss LB Vorgabe &
+        AB133-04.pdf,
+        AB133-05.pdf &
+        MVC: Model, Controller. list-, show-, new-, create-, edit-, update-,
+        delete-Methoden in Rails realisieren gemäss AB133-04,
+        Model, Controller, list, show, new, edit, show\textunderscore subject Views in
+        Rails realisieren gemäss AB133-04 &
+        Begleiteter Unterricht,
+        Selbständiges Arbeiten \\
+        \hline
+        5, 09.09.20 &
+        AB133-06 erarbeiten &
+        AB133-06.pdf &
+        Session Handling gemäss AB133-06 &
+        Begleiteter Unterricht,
+        Selbständiges Arbeiten \\
+        \hline
+        6, 14.10.20 &
+        LB 1 Schriftliche Einzelprüfung,
+        Arbeiten an der LB 2 Abgabe um 23:59 &
+        \- &
+        \- &
+        Begleiteter Unterricht,
+        Selbständiges Arbeiten \\
+        \hline
+    \end{tabularx}
 
 \end{document}
